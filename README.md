@@ -491,8 +491,8 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 **Built with ❤️ by Ayyaz Qamar**
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YourUsername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![LinkedIn](www.linkedin.com/in/ayyaz-qamar-41bb51383)
+[![Email](ayyazqamar12@gmail.com)
 
 </div>
 
