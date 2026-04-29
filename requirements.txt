@@ -1,0 +1,27 @@
+# ===== Voice (already familiar) =====
+SpeechRecognition>=3.10.0
+PyAudio>=0.2.13
+gTTS>=2.4.0
+pygame>=2.5.0
+
+# ===== LLM (Ollama - Local, Free) =====
+ollama>=0.3.0
+
+# ===== Web Server (frontend connection) =====
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+websockets>=12.0
+
+# ===== Tools - Feature Libraries =====
+pywhatkit>=5.4              # WhatsApp + YouTube
+requests>=2.31.0            # Web requests
+beautifulsoup4>=4.12.0      # HTML parsing
+psutil>=5.9.0               # System info
+
+# ===== Windows-Specific (System Control) =====
+pycaw>=20240210; sys_platform == "win32"
+comtypes>=1.4.0; sys_platform == "win32"
+screen-brightness-control>=0.22.0
+
+# ===== Utility =====
+python-dotenv>=1.0.0

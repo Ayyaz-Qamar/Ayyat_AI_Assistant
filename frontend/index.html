@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayyat - AI Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-effects">
+        <div class="orb-glow orb-glow-1"></div>
+        <div class="orb-glow orb-glow-2"></div>
+        <div class="orb-glow orb-glow-3"></div>
+    </div>
+
+    <div class="app-container">
+
+        <header class="top-bar">
+            <div class="brand">
+                <div class="brand-logo">
+                    <div class="logo-ring"></div>
+                    <span class="logo-letter">A</span>
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">Ayyat</h1>
+                    <span class="brand-tag">AI Assistant</span>
+                </div>
+            </div>
+
+            <div class="status-pill">
+                <span class="status-dot" id="statusIndicator"></span>
+                <span class="status-label" id="statusText">Connecting</span>
+            </div>
+
+            <div class="time-display">
+                <span class="time-value" id="clockTime">00:00</span>
+                <span class="time-label">Local Time</span>
+            </div>
+        </header>
+
+        <main class="main-area">
+
+            <div class="visualizer">
+                <div class="orb-wrapper">
+                    <canvas id="orbCanvas"></canvas>
+                </div>
+                <div class="visualizer-label" id="orbLabel">Idle</div>
+            </div>
+
+            <div class="action-grid">
+                <button class="action-card" data-cmd="What time is it?">
+                    <div class="action-icon">⏱</div>
+                    <span class="action-text">Time</span>
+                </button>
+                <button class="action-card" data-cmd="Open notepad">
+                    <div class="action-icon">📝</div>
+                    <span class="action-text">Notepad</span>
+                </button>
+                <button class="action-card" data-cmd="Tell me a joke">
+                    <div class="action-icon">😄</div>
+                    <span class="action-text">Joke</span>
+                </button>
+                <button class="action-card" data-cmd="Volume up">
+                    <div class="action-icon">🔊</div>
+                    <span class="action-text">Volume</span>
+                </button>
+                <button class="action-card" data-cmd="What can you do?">
+                    <div class="action-icon">💡</div>
+                    <span class="action-text">Help</span>
+                </button>
+            </div>
+
+        </main>
+
+        <section class="conversation">
+            <div class="chat-list" id="chatContainer">
+            </div>
+
+            <div class="input-bar">
+                <button class="icon-btn mic-btn" id="micBtn" title="Click to start continuous listening">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                        <line x1="12" y1="19" x2="12" y2="23"/>
+                        <line x1="8" y1="23" x2="16" y2="23"/>
+                    </svg>
+                </button>
+
+                <input
+                    type="text"
+                    class="text-input"
+                    id="chatInput"
+                    placeholder="Type your message..."
+                    autocomplete="off"
+                >
+
+                <button class="icon-btn send-btn" id="sendBtn" title="Send message">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"/>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="/static/js/orb.js"></script>
+    <script src="/static/js/websocket.js"></script>
+    <script src="/static/js/app.js"></script>
+
+</body>
+</html>
